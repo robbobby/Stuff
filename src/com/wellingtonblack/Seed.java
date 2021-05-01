@@ -2,7 +2,6 @@ package com.wellingtonblack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Seed {
     Teacher teacher = new Teacher("Jorge");
@@ -18,15 +17,20 @@ public class Seed {
     Team team = new Team("SightHill", "SightHill Cool College", project,
             new ArrayList<>(Arrays.asList(student, student1, student2, student3)),
             teacher, new Ladder());
+
+    Team team1 = new Team("Granton", "SightHill Cool College", project,
+            new ArrayList<>(Arrays.asList(student, student1, student2, student3)),
+            teacher, new Ladder());
+
     Specialisation specialisation = new Specialisation("Software Development",
             new ArrayList<>(Arrays.asList(judge, judge1)),
-            new ArrayList<>(Collections.singletonList(team)));
+            new ArrayList<>(Arrays.asList(team, team1)));
     Specialisation specialisation1 = new Specialisation("Networking",
             new ArrayList<>(Arrays.asList(judge, judge1)),
-            new ArrayList<>(Collections.singletonList(team)));
+            new ArrayList<>(Arrays.asList(team, team1)));
     Specialisation specialisation2 = new Specialisation("Web Design",
             new ArrayList<>(Arrays.asList(judge, judge1)),
-            new ArrayList<>(Collections.singletonList(team)));
+            new ArrayList<>(Arrays.asList(team, team1)));
 
     Competition competition = new Competition(
             new ArrayList<>(Arrays.asList(specialisation, specialisation1, specialisation2)));

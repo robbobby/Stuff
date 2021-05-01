@@ -2,7 +2,7 @@ package com.wellingtonblack;
 
 import java.util.ArrayList;
 
-public class Team implements IName{
+public class Team implements IName {
     private String name;
     private String collegeName;
     private Project project;

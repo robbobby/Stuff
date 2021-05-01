@@ -1,6 +1,6 @@
 package com.wellingtonblack;
 
-public class Student implements IName {
+public class Student {
 
     private String name;
 
